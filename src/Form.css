@@ -1,0 +1,18 @@
+.form {
+    margin: 10% 10% 15% 10%;
+    
+}
+input {
+    margin-bottom: 30px;
+}
+.form-control:focus {
+    border-color: #000;
+    box-shadow: 0 0 0 0.2rem rgba(0,0,0,.02);
+}
+
+.btn-lg {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+

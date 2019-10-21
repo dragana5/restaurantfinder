@@ -1,0 +1,15 @@
+.buttons {
+    text-align: right;
+    /* margin-top: -3%; */
+    /* max-width: 100%; */
+    position: sticky;
+    /* margin-right: 0%; */
+}
+
+svg {
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
