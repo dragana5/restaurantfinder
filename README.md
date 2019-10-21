@@ -1,24 +1,26 @@
-Your Restaurant Finder
+## Your Restaurant Finder
 
-I called the task project 'Your Restaurant Finder'.
+### How to use this app
+On the very first page you can enter the name of a restaurant and API key is not necessary needed if you do not have one. 
 
-On the very first page you can enter the name of a restaurant and API key is not necessary needed if oyu do not have one. 
-Click on the button to search for restaurants. You will now get a list of 100 restaurants currently found in Foursquare and you will be able to choose to see the similar restaurants to the restaurant you clicked on ot go back to the search page.
+Click on the button to search for restaurants. You will now get a list of 50 restaurants currently found in Foursquare and you will be able to choose to see the similar restaurants to the restaurant you clicked on ot go back to the search page.
 if you choose to see the similar restaurants you will then get a graph of those restaurants. (I am very sorry but this graph is not currently working the way it should so for the time being you can just see a simplified and a little bit different version of the graph). 
 
+### How to run this app
 In order to run the app, you would need to run 
-npm install
+#### npm install
 this would install all the dependency packages for the app on your machine
 then you would need to run 
-npm start
-which would start the app in the browser for you
+#### npm start
+which would start the app in the browser for you at localhost port 3000
 
+### Tech Stack
+This app is built using React framework, styled with Bootstrap and D3 is used for creating the graph. Foursquare API has been used to pull  data on restaurants. In order to get data in the most efficient JSONlike format way, Axios is used.
 
-This app is built using React framework, styled with Bootstrap and D3 is used for creating the graph. Foursquare API has been used to pull restaurants' data that is used in the app. In order to get data in the most efficient JSONlike format way, Axios is used.
-
+### Code snippet
 In order to access the data in this app, you do not need to use the APIP key as this is solved by using developer's keys in the url. 
 
-searchRestaurants = (event) => {
+``searchRestaurants = (event) => {
     event.preventDefault();
     axios.get('https://api.foursquare.com/v2/venues/explore?client_id=M5JXUH3CLTCV5QUBOZLCT4XFKYZZGO2GYIMJYA2KXLACLHCB&client_secret=G3EU2UIZDHKV2L1IXGKDPMNTMUW3LK0LCT3PSXL2NOXJHTOC&v=20180323&ll=51.4996089,-0.22557100000000002&radius=100000&limit=100&query=Restaurant')
     .then(res => {
@@ -29,11 +31,7 @@ searchRestaurants = (event) => {
       })
     })
     .catch(err => console.log('There was an error:' + err));
-  }
-
-
-and finally tests
-Jest is used in writing test for this app.
+  }``
 
 
 
@@ -41,9 +39,7 @@ Jest is used in writing test for this app.
 
 
 
-
-
-REACT DOCS NOTES 
+## REACT DOCS NOTES 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
