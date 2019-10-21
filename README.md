@@ -3,8 +3,23 @@
 ### How to use this app
 On the very first page you can enter the name of a restaurant and API key is not necessary needed if you do not have one. 
 
+
+![](/public/images/Screen%20Shot%202019-10-20%20at%2022.56.07.png)
+
+
 Click on the button to search for restaurants. You will now get a list of 50 restaurants currently found in Foursquare and you will be able to choose to see the similar restaurants to the restaurant you clicked on ot go back to the search page.
+
+
+![](/public/images/Screen%20Shot%202019-10-20%20at%2022.57.59.png)
+
+
+
+
 if you choose to see the similar restaurants you will then get a graph of those restaurants. (I am very sorry but this graph is not currently working the way it should so for the time being you can just see a simplified and a little bit different version of the graph). 
+
+
+![](/public/images/Screen%20Shot%202019-10-20%20at%2022.58.19.png)
+
 
 ### How to run this app
 In order to run the app, you would need to run 
