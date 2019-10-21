@@ -33,12 +33,7 @@ class Chart extends React.Component{
       <button onClick={ this.props.graphBack } className="btn btn-secondary btn-outline-dark ">Go back to search</button>
       <button onClick={ this.props.graphList } className="btn btn-secondary btn-outline-dark ">Go back to restaurants list</button> 
       <ScatterPlot {...this.state} {...styles} />
-      <div className="controls">
-        <button className="btn btn btn-secondary btn-outline-dark" onClick={() => this.randomizeData()}>
-          Randomize Data
-        </button>
-        
-      </div>
+      
     </div>
   }
 }
